@@ -1,0 +1,95 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+<!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8">\
+  <title>Valentine \uc0\u55357 \u56472 </title>\
+  <style>\
+    body \{\
+      height: 100vh;\
+      margin: 0;\
+      display: flex;\
+      justify-content: center;\
+      align-items: center;\
+      background: #ffe6f0;\
+      font-family: Arial, sans-serif;\
+    \}\
+\
+    .container \{\
+      text-align: center;\
+    \}\
+\
+    h1 \{\
+      font-size: 2.5rem;\
+      margin-bottom: 40px;\
+      color: #d63384;\
+    \}\
+\
+    button \{\
+      font-size: 1.2rem;\
+      padding: 15px 30px;\
+      border: none;\
+      border-radius: 30px;\
+      cursor: pointer;\
+      position: relative;\
+    \}\
+\
+    #yes \{\
+      background-color: #ff4d88;\
+      color: white;\
+      margin-right: 20px;\
+    \}\
+\
+    #no \{\
+      background-color: #ccc;\
+      color: #333;\
+      position: absolute;\
+    \}\
+\
+    #message \{\
+      margin-top: 40px;\
+      font-size: 2rem;\
+      color: #c2185b;\
+      display: none;\
+    \}\
+  </style>\
+</head>\
+<body>\
+\
+  <div class="container">\
+    <h1>Would you be my Valentine? \uc0\u55357 \u56470 </h1>\
+\
+    <button id="yes">Yes \uc0\u55357 \u56469 </button>\
+    <button id="no">No \uc0\u55357 \u56837 </button>\
+\
+    <div id="message">I love ma tunisienne \uc0\u55356 \u56825 \u55356 \u56819 \u10084 \u65039 </div>\
+  </div>\
+\
+  <script>\
+    const noBtn = document.getElementById("no");\
+    const yesBtn = document.getElementById("yes");\
+    const message = document.getElementById("message");\
+\
+    noBtn.addEventListener("mouseover", () => \{\
+      const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);\
+      const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);\
+      noBtn.style.left = x + "px";\
+      noBtn.style.top = y + "px";\
+    \});\
+\
+    yesBtn.addEventListener("click", () => \{\
+      message.style.display = "block";\
+    \});\
+  </script>\
+\
+</body>\
+</html>\
+}
